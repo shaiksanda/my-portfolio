@@ -32,6 +32,13 @@
 .home-section {
   background-image: url('https://www.sapphirewebsolutions.com/wp-content/uploads/2019/09/Web-Development-Trends.jpg');
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .home-section {
+    background-image: url('https://res.cloudinary.com/dq4yjeejc/image/upload/v1722134350/Screenshot_2024-07-28_080837_ugw2ni.png');
+  }
 }
