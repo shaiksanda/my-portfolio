@@ -60,12 +60,12 @@
           <div></div>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="#homeSection"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#aboutSection">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Projects</a>
@@ -81,13 +81,54 @@
         </div>
       </div>
     </nav>
-    <audio autoplay playsinline loop>
+    <audio loop>
       <source
         src="https://res.cloudinary.com/dq4yjeejc/video/upload/v1722134393/beat_2_e8o29r.wav"
         type="audio/wav"
       />
       Your browser does not support the audio element.
     </audio>
-    <div class="home-section"></div>
+
+    <div class="home-section" id="homeSection">
+      <h1 class="main-heading" id="heading">Empowering Ideas Through Code</h1>
+      <p class="main-paragraph" id="content">
+        Welcome to my portfolio! I am passionate about turning innovative ideas
+        into reality through elegant and efficient code. With expertise in
+        JavaScript, HTML, CSS, Node.js, and Express.js, I strive to create web
+        applications that are not only functional but also visually appealing.
+        Explore my projects to see how I solve complex problems with creative
+        solutions. Let's build a future driven by passion, innovation, and
+        excellence.
+      </p>
+      <a href="#projects" class="btn btn-primary button" id="viewProjectsBtn"
+        >View My Projects</a
+      >
+    </div>
+    <div class="about-section" id="aboutSection">
+      <div class="container">
+        <h1 class="main-heading">About Me</h1>
+        <p class="main-paragraph">
+          Hi there! I'm Sunny, and I’m driven by a passion to build user
+          interfaces with exceptional user experience (UX). My journey into web
+          development began with Nxtwave, where I started with HTML and CSS,
+          despite having no prior computer knowledge. Through dedication and
+          practice, I have grown significantly in this field.
+        </p>
+        <p class="main-paragraph">
+          Over time, I’ve completed several projects, including a static tourism
+          website, a responsive food munch website, and a dynamic todo
+          application. Of these, I'm particularly proud of the
+          food-munch-responsive website for its impressive responsiveness.
+        </p>
+        <p class="main-paragraph">
+          Currently, I'm focused on learning React and aspire to build
+          comprehensive applications involving frontend, backend, and database.
+          My ultimate goal is to become an expert in web development and later
+          transition into cybersecurity to provide robust security solutions.
+        </p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
