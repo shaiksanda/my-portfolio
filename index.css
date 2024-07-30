@@ -8,7 +8,7 @@ html {
 }
 
 .bg-gradient {
-  background: linear-gradient(to right, #2e8b57, #004d00);
+  background: linear-gradient(to right, #1c1c1c, #00ff00, #003300);
 }
 
 .nav-heading {
@@ -51,7 +51,7 @@ html {
   position: relative;
   color: white;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
