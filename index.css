@@ -17,6 +17,7 @@ html {
   font-weight: 600;
   font-size: 20px;
 }
+
 .image {
   width: 50px;
   border-radius: 50px;
@@ -54,6 +55,7 @@ html {
   text-align: center;
   min-height: 100vh;
   display: flex;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #00b09b, #96c93d); /* Example gradient */
@@ -66,6 +68,7 @@ html {
   animation: fadeIn 2s ease-out;
   color: yellow;
 }
+
 .main-heading-1 {
   color: yellow;
 }
@@ -76,21 +79,71 @@ html {
   margin-bottom: 30px;
   animation: fadeIn 3s ease-out;
 }
+/* Remove Bootstrap button styles for specific buttons */
+button,
+.button {
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:focus,
+.button:focus {
+  outline: none;
+}
 
 .button {
-  padding: 12px 24px;
-  font-size: 1.2em;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
   font-weight: bold;
+  text-align: center;
   text-decoration: none;
-  color: white;
-  background-color: #007bff;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  margin: 20px;
+  background-color: brown; /* Background color to match your design */
+  color: wheat; /* Text color */
+  /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition */
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #00ff00; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+  font-weight: bold;
+  text-decoration: none; /* Remove text decoration on hover */
+}
+
+/* Removed hover effect for the button */
+/*
+.button:hover {
+  background-color: #00ff00;
+  color: black;
+  font-family: 'Bree Serif';
+  font-style: italic;
+}
+*/
+.gradient-green-button {
+  background-color: brown;
+  border: none;
+  color: wheat; /* Initial text color */
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.3s, color 0.3s, text-decoration 0.3s;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Initial text decoration */
+}
+
+.gradient-green-button:hover {
+  background: radial-gradient(circle, #00ff00, #32cd32, #004d00);
+  transform: scale(2.01);
+  color: white; /* Ensure text color remains white on hover */
+  text-decoration: none; /* Ensure text decoration remains none on hover */
 }
 
 .about-section {
@@ -103,6 +156,10 @@ html {
   overflow: hidden;
 }
 
+.main-heading-2:hover {
+  color: brown;
+  font-family: 'Bree Serif';
+}
 .details {
   margin-bottom: 20px;
   padding: 15px;
@@ -117,6 +174,11 @@ summary {
   font-weight: bold;
 }
 
+.summary:hover {
+  color: brown;
+  font-family: 'Bree Serif';
+}
+
 .card-content {
   /* Text color */
   padding: 20px;
@@ -125,9 +187,18 @@ summary {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for card effect */
 }
 
+@media screen and (min-width: 768px) {
+  .card-content {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
 .card-content:hover {
   background-color: #00ff00;
   color: black;
+  font-family: 'Bree Serif';
+  font-style: italic;
 }
 
 .card-content p {
@@ -182,6 +253,7 @@ summary {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
+
 .card:hover {
   background-color: black; /* Light blue on hover */
   transform: scale(1.03);
@@ -199,18 +271,6 @@ summary {
   color: #ccc;
 }
 
-.btn-primary {
-  background-color: #00ff00;
-  border: none;
-  font-weight: bold;
-  color: #000;
-  transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-  background-color: #ffffff;
-  color: #000;
-}
 #skillsSection {
   padding: 2rem;
   background: linear-gradient(to right, #9acd32, #002e00);
@@ -247,6 +307,7 @@ summary {
 .list-group-item:hover {
   background-color: pink; /* Light blue on hover */
   transform: scale(1.03);
+  cursor: pointer;
 }
 
 .list-group-item i {
@@ -263,6 +324,7 @@ summary {
 .skill-category {
   margin-bottom: 2rem;
 }
+
 .skill-heading {
   font-size: 2.5rem;
   font-weight: bold;
