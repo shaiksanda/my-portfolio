@@ -7,14 +7,24 @@ html {
   height: 100%;
 }
 
-.navbar.bg-gradient {
-  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
-  color: white;
+.bg-gradient {
+  background: linear-gradient(to right, #2e8b57, #004d00);
 }
 
+.nav-heading {
+  color: black;
+  font-family: 'Roboto';
+  font-weight: 600;
+}
 .image {
-  width: 60px;
+  width: 50px;
   border-radius: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    width: 100px;
+  }
 }
 
 .image-container {
@@ -31,40 +41,54 @@ html {
 
 .title-heading {
   font-family: 'Bree Serif';
-  color: #800000;
+  color: yellow;
   font-size: 24px;
   font-weight: bold;
   align-self: center;
 }
 
 .home-section {
-  background: linear-gradient(to right, #1c1c1c, #00ff00, #003300);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   color: white;
   text-align: center;
-  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('https://source.unsplash.com/random') no-repeat center
+    center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+  padding: 20px;
+  border-radius: 10px;
+}
 .main-heading {
-  font-size: 2 rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: 'Bree Serif';
+  font-family: 'Bree Serif', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-out;
+  color: yellow;
+}
+.main-heading-1 {
   color: yellow;
 }
 
 .main-paragraph {
-  font-size: 1.5em;
-  max-width: 800px;
-  line-height: 1.5;
-  margin: 0 20px;
-  color: white;
-  font-weight: bold;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  animation: fadeIn 3s ease-out;
 }
 
 .button {
@@ -85,7 +109,7 @@ html {
 
 .about-section {
   padding: 60px 0;
-  background: linear-gradient(to right, #8b0000, #ff6347);
+  background: linear-gradient(to right, #2e8b57, #004d00);
 }
 
 .about-section h1 {
@@ -163,7 +187,8 @@ html {
 }
 #skillsSection {
   padding: 2rem;
-  background-color: #f4f4f9; /* Light background color */
+  background: linear-gradient(to right, #9acd32, #002e00);
+  /* Light background color */
 }
 
 #skillsSection h1 {
@@ -186,6 +211,7 @@ html {
   display: flex;
   align-items: center;
   padding: 1rem;
+  margin: 4px;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
   background-color: #fff; /* White background for items */

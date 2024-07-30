@@ -32,7 +32,7 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
       <div class="container">
         <a class="navbar-brand image-container d-flex" href="#"
           ><img
@@ -60,18 +60,18 @@
           <div></div>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#homeSection"
+              <a class="nav-link nav-heading" href="#homeSection"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aboutSection">About</a>
+              <a class="nav-link nav-heading" href="#aboutSection">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link nav-heading" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skillsSection">Skills</a>
+              <a class="nav-link nav-heading" href="#skillsSection">Skills</a>
             </li>
           </ul>
           <div></div>
@@ -87,23 +87,34 @@
     </audio>
 
     <div class="home-section" id="homeSection">
-      <h1 class="main-heading" id="heading">Empowering Ideas Through Code</h1>
-      <p class="main-paragraph" id="content">
-        Welcome to my portfolio! I am passionate about turning innovative ideas
-        into reality through elegant and efficient code. With expertise in
-        JavaScript, HTML, CSS, Node.js, and Express.js, I strive to create web
-        applications that are not only functional but also visually appealing.
-        Explore my projects to see how I solve complex problems with creative
-        solutions. Let's build a future driven by passion, innovation, and
-        excellence.
-      </p>
-      <a href="#projects" class="btn btn-primary button" id="viewProjectsBtn"
-        >View My Projects</a
-      >
+      <div class="hero-container">
+        <div class="hero-overlay">
+          <h1 class="main-heading" id="heading">
+            Empowering Ideas Through Code
+          </h1>
+          <p class="main-paragraph" id="content">
+            Welcome to my portfolio! I am passionate about turning innovative
+            ideas into reality through elegant and efficient code. With
+            expertise in JavaScript, HTML, CSS, Node.js, and Express.js, I
+            strive to create web applications that are not only functional but
+            also visually appealing. Explore my projects to see how I solve
+            complex problems with creative solutions. Let's build a future
+            driven by passion, innovation, and excellence.
+          </p>
+          <a
+            href="#projects"
+            class="btn btn-primary button"
+            id="viewProjectsBtn"
+          >
+            View My Projects
+          </a>
+        </div>
+      </div>
     </div>
+
     <div class="about-section" id="aboutSection">
       <div class="container">
-        <h1 class="main-heading">About Me</h1>
+        <h1 class="main-heading-1">About Me</h1>
         <p class="main-paragraph">
           Hi there! I'm Sunny, and I’m driven by a passion to build user
           interfaces with exceptional user experience (UX). My journey into web
