@@ -60,18 +60,18 @@
           <div></div>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link nav-heading" href="#homeSection"
+              <a class="nav-link nav-heading-1" href="#homeSection"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-heading" href="#aboutSection">About</a>
+              <a class="nav-link nav-heading-1" href="#aboutSection">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-heading" href="#projects">Projects</a>
+              <a class="nav-link nav-heading-1" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-heading" href="#skillsSection">Skills</a>
+              <a class="nav-link nav-heading-1" href="#skillsSection">Skills</a>
             </li>
           </ul>
           <div></div>
@@ -107,28 +107,49 @@
 
     <div class="about-section" id="aboutSection">
       <div class="container">
-        <h1 class="main-heading-1">About Me</h1>
-        <p class="main-paragraph">
-          Hi there! I'm Sunny, and I’m driven by a passion to build user
-          interfaces with exceptional user experience (UX). My journey into web
-          development began with Nxtwave, where I started with HTML and CSS,
-          despite having no prior computer knowledge. Through dedication and
-          practice, I have grown significantly in this field.
-        </p>
-        <p class="main-paragraph">
-          Over time, I’ve completed several projects, including a static tourism
-          website, a responsive food munch website, and a dynamic todo
-          application. Of these, I'm particularly proud of the
-          food-munch-responsive website for its impressive responsiveness.
-        </p>
-        <p class="main-paragraph">
-          Currently, I'm focused on learning React and aspire to build
-          comprehensive applications involving frontend, backend, and database.
-          My ultimate goal is to become an expert in web development and later
-          transition into cybersecurity to provide robust security solutions.
-        </p>
+        <h1 class="main-heading">About Me</h1>
+
+        <!-- Details and Summary Tags with Card Styling -->
+        <details>
+          <summary>My Journey</summary>
+          <div class="card-content">
+            <p>
+              Hi there! I'm Sunny, and I’m driven by a passion to build user
+              interfaces with exceptional user experience (UX). My journey into
+              web development began with Nxtwave, where I started with HTML and
+              CSS, despite having no prior computer knowledge. Through
+              dedication and practice, I have grown significantly in this field.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Projects</summary>
+          <div class="card-content">
+            <p>
+              Over time, I’ve completed several projects, including a static
+              tourism website, a responsive food munch website, and a dynamic
+              todo application. Of these, I'm particularly proud of the
+              food-munch-responsive website for its impressive responsiveness.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Future Goals</summary>
+          <div class="card-content">
+            <p>
+              Currently, I'm focused on learning React and aspire to build
+              comprehensive applications involving frontend, backend, and
+              database. My ultimate goal is to become an expert in web
+              development and later transition into cybersecurity to provide
+              robust security solutions.
+            </p>
+          </div>
+        </details>
       </div>
     </div>
+
     <div id="projects">
       <div class="page-container container mt-5">
         <h1 class="text-center mb-4">My Projects</h1>
@@ -211,7 +232,8 @@
           </li>
           <li class="list-group-item"><i class="fas fa-database"></i> SQL</li>
           <li class="list-group-item">
-            <i class="fas fa-database"></i> Python
+            <i class="fab fa-python"></i>
+            Python
           </li>
           <li class="list-group-item"><i class="fab fa-git"></i> Git</li>
         </ul>
@@ -223,8 +245,14 @@
         <ul class="list-group">
           <li class="list-group-item"><i class="fab fa-react"></i> React</li>
           <li class="list-group-item">
-            <i class="fas fa-database"></i> MongoDB
+            <img
+              src="https://getdrawings.com/free-icon/mongodb-icon-62.png"
+              alt="MongoDB"
+              style="width: 30px; height: auto; vertical-align: middle"
+            />
+            MongoDB
           </li>
+
           <li class="list-group-item">
             <i class="fas fa-laptop-code"></i> OS/Computer Fundamentals
           </li>

@@ -11,10 +11,11 @@ html {
   background: linear-gradient(to right, #1c1c1c, #00ff00, #003300);
 }
 
-.nav-heading {
+.nav-heading-1 {
   color: black;
   font-family: 'Roboto';
   font-weight: 600;
+  font-size: 20px;
 }
 .image {
   width: 50px;
@@ -94,7 +95,43 @@ html {
 
 .about-section {
   padding: 60px 0;
-  background: linear-gradient(to right, #2e8b57, #004d00);
+  background: radial-gradient(circle, #009900, #00b300, #66ff66, #d9ff99);
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.details {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5); /* Optional background color for visibility */
+  border-radius: 10px;
+}
+
+summary {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff; /* Text color */
+  font-weight: bold;
+}
+
+.card-content {
+  /* Text color */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for card effect */
+}
+
+.card-content:hover {
+  background-color: #00ff00;
+  color: black;
+}
+
+.card-content p {
+  margin: 0;
 }
 
 .about-section h1 {
@@ -144,6 +181,10 @@ html {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
+}
+.card:hover {
+  background-color: black; /* Light blue on hover */
+  transform: scale(1.03);
 }
 
 .card-title {
@@ -204,8 +245,8 @@ html {
 }
 
 .list-group-item:hover {
-  background-color: #e0f7fa; /* Light blue on hover */
-  transform: scale(1.02);
+  background-color: pink; /* Light blue on hover */
+  transform: scale(1.03);
 }
 
 .list-group-item i {
