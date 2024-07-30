@@ -99,3 +99,139 @@ html {
   margin: auto;
   padding: 0 15px;
 }
+
+/* General container styles */
+.page-container {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #1c1c1c, #00ff00, #003300);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Projects section */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: #2f2f2f;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  color: #00ff00;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.btn-primary {
+  background-color: #00ff00;
+  border: none;
+  font-weight: bold;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+#skillsSection {
+  padding: 2rem;
+  background-color: #f4f4f9; /* Light background color */
+}
+
+#skillsSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333; /* Dark text color */
+}
+
+#skillsSection h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #555; /* Slightly lighter dark color */
+}
+
+.list-group {
+  margin-bottom: 2rem;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  background-color: #fff; /* White background for items */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #e0f7fa; /* Light blue on hover */
+  transform: scale(1.02);
+}
+
+.list-group-item i {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.list-group-item span {
+  font-size: 1.2rem;
+  color: #333; /* Dark text color for list items */
+}
+
+.skill-category {
+  margin-bottom: 2rem;
+}
+.skill-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #00ff00 !important; /* Dark text color */
+  font-family: 'Bree Serif'; /* Font family */
+}
+
+.skill-category h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #444; /* Darker color for subcategories */
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill-category ul li {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  color: #666; /* Grey color for skills */
+}
